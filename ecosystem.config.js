@@ -21,12 +21,11 @@ module.exports = {
     deploy: {
       production: {
         user: 'root',
-        host: ['139.224.234.213'],
+        host: ['121.43.161.232'],
         port: '22',
         ref : 'origin/master',
-        repo: 'git@github.com:bailicangdu/node-elm.git',
-        path: '/root/mygit/node-elm',
-        'ssh_options': 'StrictHostKeyChecking=no',
+        repo: 'git@github.com:laozhu123/express_base.git',
+        path: '/root/js_base/express_base',
         'post-deploy': 'npm install && pm2 reload ecosystem.config.js --env production',
       }
     }
